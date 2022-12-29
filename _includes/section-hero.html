@@ -1,0 +1,40 @@
+{% if site.data.settings.hero.enable == true %}
+<!-- begin hero -->
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="hero__inner">
+          {{ if site.data.settings.hero.hero__title }}
+          <h1 class="hero__title">{{ site.data.settings.hero.hero__title }}</h1>
+          {{ end }}
+          {{ if site.data.settings.hero.hero__description }}
+          <p class="hero__description">{{ site.data.settings.hero.hero__description }}</p>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-12">
+        <div class="hero-bg">
+          <div class="search-container">
+            <div class="search-box">
+              <div class="search-text">
+                <span class="search-title">Where to?</span>
+                <div>
+                  <span class="search-filters">Anywhere . Any week . Add guests</span>
+                </div>
+              </div>
+              <div class="search-icon">
+                <i class="nav__icon icon__search ion ion-md-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offer" style="padding: 1rem; text-align: center; background-color: #A41623; font-weight: 600; font-size: 1.2rem; color: #FFFFFF; margin-top: 4rem;">Save even more on your upcoming trip. Flat 20% off on all bookings!</div>
+</section>
+<!-- end hero -->
+{% endif %}
