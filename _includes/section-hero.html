@@ -1,4 +1,34 @@
 {% if site.data.settings.hero.enable == true %}
+<script>
+  var countDownDate = new Date("Jan 12, 2023 23:59:59").getTime();
+
+  var x = setInterval(function () {
+
+    var now = new Date().getTime();
+
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "0";
+      document.getElementById("days").innerHTML = "0";
+      document.getElementById("hours").innerHTML = "0";
+      document.getElementById("minutes").innerHTML = "0";
+      document.getElementById("seconds").innerHTML = "0";
+    }
+  }, 1000);
+</script>
+
 <!-- begin hero -->
 <section class="hero">
   <div class="container">
@@ -24,22 +54,49 @@
         <div class="hero-bg" style="background-image: url({{'/images/hero.jpg' | relative_url}})">
           <div class="search-container">
             <div class="search-box">
-              <div class="search-text">
-                <span class="search-title">Where to?</span>
+              <!-- <div class="search-text">
+                <span id="demo" class="search-title">Where to?</span>
                 <div>
                   <span class="search-filters">Anywhere . Any week . Add guests</span>
                 </div>
+              </div> -->
+              <div class="center-counter">
+                <div class="row">
+                  <span class="ml1">
+                    <p id="days" class="col-3 count"></p>
+                    <br />
+                    days
+                  </span>
+                  <span class="ml1">
+                    <p id="hours" class="col-3 count"></p>
+                    <br />
+                    Hours
+                  </span>
+                  <span class="ml1">
+                    <p id="minutes" class="col-3 count"></p>
+                    <br />
+                    minutes
+                  </span>
+                  <span class="ml1">
+                    <p id="seconds" class="col-3 count"></p>
+                    <br />
+                    seconds
+                  </span>
+                </div>
               </div>
-              <div class="search-icon">
+              <p style="display: none;" class="count-down" id="demo"></p>
+              <!-- <div class="search-icon">
                 <i class="nav__icon icon__search ion ion-md-search"></i>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="offer" style="padding: 1rem; text-align: center; background-color: #A41623; font-weight: 600; font-size: 1.2rem; color: #FFFFFF; margin-top: 4rem;">We’re launching a brand new camping experience. Sign up now to get 20% off your first booking when we launch.</div>
+  <div class="offer"
+    style="padding: 1rem; text-align: center; background-color: #A41623; font-weight: 600; font-size: 1.2rem; color: #FFFFFF; margin-top: 4rem;">
+    We’re launching a brand new camping experience. Sign up now to get 20% off your first booking when we launch.</div>
 </section>
 <!-- end hero -->
 {% endif %}

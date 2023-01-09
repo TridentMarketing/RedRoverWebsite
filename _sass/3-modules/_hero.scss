@@ -102,7 +102,7 @@
   align-items: center;
 
   .search-box {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 4rem;
     padding: 1rem 2rem;
     box-shadow: 0.187rem 0.187rem 0.625rem rgba(0, 0, 0, 0.1);
@@ -125,21 +125,25 @@
       border-radius: 50%;
       width: 2.6rem;
       height: 2.6rem;
-      background: #A41623;
+      background: #a41623;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #FFFFFF;
+      color: #ffffff;
       font-size: 1.6rem;
     }
-  }
 
+    .count-down {
+      position: relative;
+      top: 1rem;
+    }
+  }
 }
 
 .hero-signup-btn {
-  padding: 0.8rem 2.4rem; 
-  background: #A41623;
-  color: #FFFFFF;
+  padding: 0.8rem 2.4rem;
+  background: #a41623;
+  color: #ffffff;
   border: none;
   font-size: 1rem;
   font-weight: 700;
@@ -151,4 +155,16 @@
   display: flex;
   justify-content: center;
   margin: 1.5rem;
+}
+
+.count {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: -1rem;
+  padding-left: 0.5rem;
+}
+
+.center-counter {
+  margin-left: auto;
+  margin-right: auto;
 }
