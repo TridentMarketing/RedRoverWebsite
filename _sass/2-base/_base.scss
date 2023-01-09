@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -18,7 +20,9 @@ body {
   }
 
   &.disable-animation {
-    *, *::after, *::before {
+    *,
+    *::after,
+    *::before {
       transition: none !important;
     }
   }
@@ -79,7 +83,7 @@ blockquote {
   color: var(--heading-font-color);
 
   &::before {
-    content: '\201C';
+    content: "\201C";
     position: absolute;
     top: 0.7em;
     left: 0;
@@ -100,7 +104,6 @@ blockquote {
     font-weight: 700;
     font-style: normal;
     color: var(--heading-font-color);
-
   }
 
   @media only screen and (max-width: $mobile) {
@@ -134,14 +137,14 @@ img,
 img,
 .lightense-wrap,
 .gallery {
-  &+em {
+  & + em {
     display: block;
     margin-top: 20px;
     font-size: 12px;
     font-style: normal;
     font-weight: normal;
     text-align: center;
-  
+
     a {
       font-weight: 600;
       border-bottom: 1px solid transparent;
@@ -152,7 +155,7 @@ img,
         border-color: var(--link-color-hover);
       }
     }
-  
+
     @media only screen and (max-width: $mobile) {
       margin-top: 12px;
     }
@@ -214,7 +217,7 @@ table th {
 
 table tr {
   background-color: var(--tr-color);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   &:nth-child(even) {
     background-color: transparent;
   }
@@ -238,7 +241,7 @@ table td {
   border: none;
   outline: none;
   cursor: pointer;
-  transition: all .25s;
+  transition: all 0.25s;
   color: var(--button-color);
   background: var(--button-background-color);
 
@@ -296,6 +299,93 @@ table td {
   margin-bottom: 1rem;
 }
 
-.ml1{
+.ml1 {
   margin-right: 1rem;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10rem; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 2rem;
+  border: 1px solid #888;
+  width: 500px;
+  height: 400px;
+  border-radius: 8px;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  padding-top: 2rem;
+  text-align: left;
+}
+
+.modal-input {
+  padding: 0.5rem;
+  border: 1px solid;
+  border-radius: 8px;
+}
+.modal-input label {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.modal-input input {
+  border: none;
+  width: 100%;
+}
+.terms-text {
+  padding-top: 1rem;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4b4b4b;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-btn {
+  padding: 0.8rem 5rem;
+  background: #a41623;
+  color: #ffffff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-btn-center {
+  display: flex;
+  justify-content: center;
 }
