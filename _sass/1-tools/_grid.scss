@@ -67,6 +67,7 @@ $mq: ( $mobile:$columns, $tablet:$columns, $desktop:$columns );
 }
 
 
+
 @for $i from 0 through $columns {
   .col-#{$i} {
     width: percentage( calc($i / $columns) );
