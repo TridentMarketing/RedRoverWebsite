@@ -160,11 +160,23 @@
 .count {
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: -1rem;
-  padding-left: 0.5rem;
+  margin-bottom: -1.125rem;
+  padding-left: 1rem;
 }
 
 .center-counter {
   margin-left: auto;
   margin-right: auto;
+}
+
+.count-inner-padding {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: $mobile) {
+  .count-inner-padding {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
 }

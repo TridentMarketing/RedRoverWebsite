@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
     menu();
   });
 
-  searchOpenIcon.addEventListener("click", () => {
-    searchOpen();
-  });
+  // searchOpenIcon.addEventListener("click", () => {
+  //   searchOpen();
+  // });
 
   searchCloseIcon.addEventListener("click", () => {
     searchClose();
