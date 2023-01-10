@@ -320,21 +320,25 @@ table td {
 
 /* Modal Content */
 .modal-content {
-  background-color: #ffffff;
+  background-color: #fff;
   margin: auto;
-  padding: 2rem;
   border: 1px solid #888;
-  width: 500px;
-  height: 400px;
+  width: 600px;
+  height: 380px;
   border-radius: 8px;
+  padding-top: 1rem;
+  padding-right: 1rem;
 }
 
 .modal-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
-  padding-top: 2rem;
-  text-align: left;
+  padding-top: 2.25rem;
+}
+
+.signup-form {
+  padding: 0 1.625rem;
 }
 
 .modal-input {
@@ -388,4 +392,17 @@ table td {
 .modal-btn-center {
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: $mobile) {
+  .modal-content {
+    background-color: #fff;
+    margin: auto;
+    border: 1px solid #888;
+    width: 400px;
+    height: 420px;
+    border-radius: 8px;
+    padding-top: 1rem;
+    padding-right: 1rem;
+  }
 }
