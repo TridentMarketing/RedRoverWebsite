@@ -29,23 +29,25 @@
       <!-- Modal start -->
       <div id="signupModal" class="modal">
         <div class="modal-content">
-        <span class="close">&times;</span>
+          <span class="close">&times;</span>
           <div class="signup-form">
             <h3 class="modal-title">Sign up to get 20% off on your first booking when we launch.</h3>
-          <div class="modal-input">
-            <label>
-              Email
-            </label>
-            <br />
-            <input type="text" placeholder="johndoe@gmail.com">
-          </div>
-          <p class="terms-text">By selecting the button below, I agree to Red Rover’s Privacy Policy and Terms of Use.
-          </p>
-          <div class="row">
-            <div class="col col-12 modal-btn-center">
-              <button class="modal-btn">Sign up</button>
+            <div class="modal-input">
+              <label>
+                Email
+              </label>
+              <br />
+              <input type="text" id="modal-signup-subscription" placeholder="johndoe@gmail.com" type="email">
             </div>
-          </div>
+            <p id="modal-success-response" class="hide-response success-msg-modal">Email submitted successfully.</p>
+            <p id="modal-error-response" class="hide-response error-msg-modal">Error occurred while submission.</p>
+            <p class="terms-text">By selecting the button below, I agree to Red Rover’s Privacy Policy and Terms of Use.
+            </p>
+            <div class="row">
+              <div class="col col-12 modal-btn-center">
+                <button id="modal-subscribe-btn" class="modal-btn">Sign up</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -77,6 +79,65 @@
         }
       }
     });
+  </script>
+
+  <script>
+
+    function hideResponse(success, error) {
+      success.classList.remove("show-response");
+      success.classList.add('hide-response');
+      error.classList.remove("show-response");
+      error.classList.add('hide-response');
+    }
+
+    function postEmail(id, success, error) {
+      let email = document.getElementById(id).value;
+      console.log(email);
+      if (email !== '') {
+        fetch('https://dev-redrover-backend.azurewebsites.net/api/pre_launch_sign_up', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email }),
+        })
+          .then(response => response.json())
+          .then(data => {
+            success.classList.remove("hide-response");
+            success.classList.add('show-response');
+            console.log('Success:', data);
+            document.getElementById(id).value = '';
+          })
+          .catch((error) => {
+            error.classList.remove("hide-response");
+            error.classList.add('show-response');
+            console.error('Error:', error);
+          });
+      }
+    }
+    //inner-subscribe
+    $('#subscribe-btn').click(function () {
+      let error = document.getElementById('error-response');
+      let success = document.getElementById('success-response');
+      hideResponse(success, error);
+      postEmail('signup-subscription', success, error);
+    })
+
+    //footer-subscribe
+    $('#footer-subscribe-btn').click(function () {
+      let error = document.getElementById('footer-error-response');
+      let success = document.getElementById('footer-success-response');
+      hideResponse(success, error);
+      postEmail('footer-signup-subscription', success, error);
+    })
+
+    //modal-subscribe
+    $('#modal-subscribe-btn').click(function () {
+      let error = document.getElementById('modal-error-response');
+      let success = document.getElementById('modal-success-response');
+      hideResponse(success, error);
+      postEmail('modal-signup-subscription', success, error);
+    })
   </script>
 
 </body>
