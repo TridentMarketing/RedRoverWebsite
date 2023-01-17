@@ -4,37 +4,46 @@ title: Terms and Conditons
 permalink: /terms/
 ---
 
-These terms and conditions (the "Terms") apply to your use of the holiday booking website, redrovercamping.com, and the services provided by Red Rover Camping through the website (the "Services"). By accessing or using the website and the Services, you agree to be bound by these Terms.
-
-## Eligibility
-
-The Services are intended for use by individuals who are at least 18 years old. If you are under 18, you may not use the Services without the supervision of a parent or legal guardian.
-
-## Booking and Cancellation
-
-When you make a booking through the website, you are entering into a contract with Red Rover Camping and the relevant third-party provider (such as a hotel or airline) for the provision of the services you have booked. The terms and conditions of the third-party provider will also apply to your booking.
-You are responsible for reviewing and understanding the terms and conditions of the third-party provider before making a booking. Red Rover Camping is not responsible for any errors or omissions in the terms and conditions of the third-party provider.
-If you need to cancel or change a booking, you should contact Red Rover Camping and the third-party provider directly. Cancellation and change policies will vary depending on the third-party provider, and you may be subject to fees and charges. Red Rover Camping is not responsible for any fees or charges incurred as a result of a cancellation or change.
+## Reservations
+All reservations must be made through the Red Rover Camping website. We cannot guarantee availability of any site or accommodation if reservations are made through any other means.
 
 ## Payment
+Payment must be made in full at the time of booking. We accept Visa, Mastercard, American Express, and Discover.
 
-Payment for the services you book through the website will be processed by Red Rover Camping on behalf of the third-party provider. You agree to pay the applicable fees and charges at the time of booking, and you authorize Red Rover Camping to charge your payment method for these fees and charges.
-If you dispute a charge on your payment method, you must contact Red Rover Camping directly to resolve the dispute. Red Rover Camping is not responsible for any disputes or chargebacks related to your payment.
+## Cancellation Policy
+Cancellations made more than 14 days prior to arrival will receive a full refund. Cancellations made within 14 days of arrival will not be refunded.
 
-## Liability
+## Age Requirements
+All individuals making a reservation must be at least 18 years of age.
 
-Red Rover Camping is not responsible for the services provided by the third-party provider, and any claims or disputes related to the quality, availability, or performance of the services should be directed to the third-party provider.
-Red Rover Camping is not responsible for any indirect, incidental, consequential, or punitive damages arising from your use of the website or the Services.
+## Occupancy
+The number of individuals occupying a site or accommodation must not exceed the maximum occupancy listed for that site or accommodation.
 
-## Modification and Termination
+## Pets
+Pets are allowed at designated pet-friendly sites and accommodations only. All pets must be kept on a leash at all times and cleaned up after. Pet owners will be responsible for any damage caused by their pets.
 
-We reserve the right to modify or discontinue the website and the Services at any time, without notice. We will not be liable to you or any third party for any modification, suspension, or discontinuation of the website or the Services.
-We may also terminate or suspend your access to the website and the Services at any time, without notice, if we believe that you have violated these Terms or any applicable law.
+## Quiet Hours
+Quiet hours are in effect from 10:00 PM to 6:00 AM. All guests are expected to respect the peaceful enjoyment of other guests during these hours.
 
-## Governing Law
+## Alcohol
+The consumption of alcohol is permitted in designated areas only.
 
-These Terms and your use of the website and the Services will be governed by and construed in accordance with the laws of [State/Country], without giving effect to any principles of conflicts of law.
+## Smoking
+Smoking is not permitted in any buildings or enclosed areas.
 
-## Contact Us
+## Firewood
+Firewood can be purchased on site or brought in certified heat-treated firewood only.
 
-If you have any questions or concerns about these Terms, please contact us at [support@redrovercamping.com](mailto:support@redrovercamping.com).
+## Damage
+Guests will be held responsible for any damages to the site or accommodation caused by them or their guests.
+
+## Indemnification
+Guests agree to indemnify and hold harmless the Red Rover Camping website, its owners, and its employees from any and all claims, damages, and expenses, including attorney's fees, arising from the use of the site or accommodation.
+
+## Jurisdiction
+These terms and conditions shall be governed by and construed in accordance with the laws of the state in which the Red Rover Camping website is located, without giving effect to any principles of conflicts of law.
+
+## Entire Agreement
+These terms and conditions constitute the entire agreement between the Red Rover Camping website and the guest regarding the use of the site or accommodation.
+
+By using the Red Rover Camping website, guests agree to be bound by these terms and conditions.
