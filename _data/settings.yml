@@ -112,14 +112,10 @@ social:
 # Footer Navigation
 footer__menu__settings:
   menu__items:
-    - title: 'FAQs'
-      url: '/faqs'
     - title: 'Privacy Policy'
       url: '/privacy/'
     - title: 'Terms & Conditions'
       url: '/terms/'
-    - title: 'Contact us'
-      url: '/contact/'
 
 
 #-------------------------------
