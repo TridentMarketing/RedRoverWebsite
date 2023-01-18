@@ -11,7 +11,7 @@ All reservations must be made through the Red Rover Camping website. We cannot g
 Payment must be made in full at the time of booking. We accept Visa, Mastercard, American Express, and Discover.
 
 ## Cancellation Policy
-Cancellations made more than 14 days prior to arrival will receive a full refund. Cancellations made within 14 days of arrival will not be refunded.
+Cancellations made more than 24 hours prior to arrival will receive a full refund. Cancellations made within 24 hours of arrival will not be refunded.
 
 ## Age Requirements
 All individuals making a reservation must be at least 18 years of age.
