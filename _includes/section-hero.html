@@ -18,16 +18,32 @@
       <div class="col col-12">
         <div class="hero-bg" style="background-image: url({{'/images/hero.jpg' | relative_url}})">
           <div class="search-container">
-            <div class="search-box">
-              <div class="search-text">
-                <span class="search-title">Where to?</span>
-                <div>
-                  <span class="search-filters">Anywhere . Any week . Add guests</span>
-                </div>
+            <div class="search-bar">
+              <div class="search-bar__field">
+                <label class="search-bar__label">Choose Resort</label>
+                <select class="search-bar__input">
+                  <option value="">Select a resort</option>
+                  <option>North Shore Landing</option>
+                  <option>Thousand Trails Resort</option>
+                  <option>Rocky Park Ranch Resort</option>
+                  <option>Hidden Bluffs Resort</option>
+                  <option>Hare Lake Resort</option>
+                  <option>St. Croix River Resort</option>
+                  <option>Southwest Shadow Resort</option>
+                  <option>Cedar Lake Resort</option>
+                </select>
               </div>
-              <div class="search-icon">
-                <i class="nav__icon icon__search ion ion-md-search"></i>
+              <div class="search-bar__divider"></div>
+              <div class="search-bar__field">
+                <label class="search-bar__label">Set Date</label>
+                <input class="search-bar__input" type="text" placeholder="Add dates">
               </div>
+              <div class="search-bar__divider"></div>
+              <div class="search-bar__field">
+                <label class="search-bar__label">Occupants</label>
+                <input class="search-bar__input" type="text" placeholder="Add guests">
+              </div>
+              <a href="/book-now/" class="search-bar__button">Search</a>
             </div>
           </div>
         </div>

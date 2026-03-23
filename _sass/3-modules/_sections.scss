@@ -477,3 +477,148 @@ p {
   font-size: 1.2rem;
   font-weight: 600;
 }
+
+/* ---- Why Red Rover ---- */
+.why-section {
+  padding: 4rem 0;
+  background: var(--background-alt-color);
+  margin-bottom: 4rem;
+}
+
+.why-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+
+  &__icon {
+    font-size: 3rem;
+    color: #A41623;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  &__text {
+    font-size: 1rem;
+    color: var(--text-alt-color);
+  }
+}
+
+/* ---- Explore Our Resorts ---- */
+.resorts-section {
+  padding: 3rem 0 4rem;
+  margin-bottom: 2rem;
+}
+
+.resort-card {
+  border-radius: $global-radius;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+  background: var(--white);
+
+  &__image {
+    height: 12rem;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__body {
+    padding: 1rem 1.2rem 1.2rem;
+  }
+
+  &__name {
+    font-size: 1rem;
+    margin: 0 0 0.25rem;
+  }
+
+  &__location {
+    font-size: 0.85rem;
+    color: var(--text-alt-color);
+    margin: 0 0 0.85rem;
+  }
+
+  &__button {
+    display: inline-block;
+    background: #A41623;
+    color: #FFFFFF;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+
+    &:hover {
+      background: darken(#A41623, 8%);
+      color: #FFFFFF;
+    }
+  }
+}
+
+/* ---- Meet Robert ---- */
+.meet-section {
+  padding: 4rem 0;
+  margin-bottom: 2rem;
+
+  &__row {
+    align-items: center;
+  }
+
+  &__photo {
+    width: 100%;
+    border-radius: $global-radius;
+    object-fit: cover;
+  }
+}
+
+/* ---- CTA ---- */
+.cta-section {
+  padding: 4rem 2rem;
+  background: #A41623;
+  text-align: center;
+
+  &__title {
+    color: #FFFFFF;
+    margin-bottom: 0.75rem;
+  }
+
+  &__subtitle {
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    display: inline-block;
+    background: #FFFFFF;
+    color: #A41623;
+    font-weight: 700;
+    padding: 0.85rem 2.5rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-size: 1rem;
+
+    &:hover {
+      background: var(--light-gray);
+      color: #A41623;
+    }
+  }
+}
+
+/* General button */
+.rr-btn {
+  display: inline-block;
+  background: #A41623;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 0.85rem 2rem;
+  border-radius: 3rem;
+  text-decoration: none;
+  font-size: 1rem;
+
+  &:hover {
+    background: darken(#A41623, 8%);
+    color: #FFFFFF;
+  }
+}

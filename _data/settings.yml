@@ -14,6 +14,8 @@ menu__settings:
     #   url: '/'
     - title: 'How it works'
       url: '/how-it-works/'
+    - title: 'Rover Locations'
+      url: '/rover-locations/'
     - title: 'Prices'
       url: '/prices/'
     - title: 'Book Now'
