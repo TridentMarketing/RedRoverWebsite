@@ -34,7 +34,7 @@ menu__settings:
 # Hero Settings
 hero:
   enable: true
-  hero__title: Say hello to your best camping vacation ever
+  hero__title: Discover Your Next Adventure!
   hero__description: Take the stress out of vacation planning and book the finest camping resorts across America. Let’s go camping!
   hero__image: # You can add hero image. For example '/images/06.jpg'
 
