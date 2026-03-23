@@ -1,40 +1,40 @@
 {% if site.data.settings.hero.enable == true %}
 <!-- begin hero -->
-<section class="hero">
-  <div class="container">
-    <div class="row">
-      <div class="col col-12">
-        <div class="hero__inner">
-          {{ if site.data.settings.hero.hero__title }}
-          <h1 class="hero__title">{{ site.data.settings.hero.hero__title }}</h1>
-          {{ end }}
-          {{ if site.data.settings.hero.hero__description }}
-          <p class="hero__description">{{ site.data.settings.hero.hero__description }}</p>
-          {{ end }}
+<section class="hero-banner">
+  <div class="hero-banner__bg" style="background-image: url({{'/images/hero.jpg' | relative_url}})">
+    <div class="hero-banner__overlay"></div>
+    <div class="hero-banner__content">
+      <h1 class="hero-banner__title">{{ site.data.settings.hero.hero__title }}</h1>
+      <div class="search-bar">
+        <div class="search-bar__field">
+          <label class="search-bar__label">Choose Resort</label>
+          <select class="search-bar__input">
+            <option value="">Select a resort</option>
+            <option>North Shore Landing</option>
+            <option>Thousand Trails Resort</option>
+            <option>Rocky Park Ranch Resort</option>
+            <option>Hidden Bluffs Resort</option>
+            <option>Hare Lake Resort</option>
+            <option>St. Croix River Resort</option>
+            <option>Southwest Shadow Resort</option>
+            <option>Cedar Lake Resort</option>
+          </select>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col col-12">
-        <div class="hero-bg" style="background-image: url({{'/images/hero.jpg' | relative_url}})">
-          <div class="search-container">
-            <div class="search-box">
-              <div class="search-text">
-                <span class="search-title">Where to?</span>
-                <div>
-                  <span class="search-filters">Anywhere . Any week . Add guests</span>
-                </div>
-              </div>
-              <div class="search-icon">
-                <i class="nav__icon icon__search ion ion-md-search"></i>
-              </div>
-            </div>
-          </div>
+        <div class="search-bar__divider"></div>
+        <div class="search-bar__field">
+          <label class="search-bar__label">Start Date</label>
+          <input class="search-bar__input" type="date">
         </div>
+        <div class="search-bar__divider"></div>
+        <div class="search-bar__field">
+          <label class="search-bar__label">End Date</label>
+          <input class="search-bar__input" type="date">
+        </div>
+        <a href="/book-now/" class="search-bar__button">Search</a>
       </div>
     </div>
   </div>
-  <div class="offer" style="padding: 1rem; text-align: center; background-color: #A41623; font-weight: 600; font-size: 1.2rem; color: #FFFFFF; margin-top: 4rem;">Save even more on your upcoming trip. Flat 20% off on all bookings!</div>
+  <div class="offer" style="padding: 1rem; text-align: center; background-color: #A41623; font-weight: 600; font-size: 1.2rem; color: #FFFFFF;">Save even more on your upcoming trip. Flat 20% off on all bookings!</div>
 </section>
 <!-- end hero -->
 {% endif %}
