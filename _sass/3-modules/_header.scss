@@ -6,10 +6,10 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 40px $base-spacing-unit;
+    padding: 18px $base-spacing-unit;
 
     @media only screen and (max-width: $mobile) {
-      padding: 32px $base-spacing-unit;
+      padding: 14px $base-spacing-unit;
     }
   }
 }

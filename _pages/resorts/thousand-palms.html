@@ -1,0 +1,178 @@
+---
+layout: resort
+title: Thousand Palms Resort
+description: Thousand Palms Resort in Sevierville, TN.
+permalink: /resorts/thousand-palms/
+---
+
+<!-- ═══ VIDEO HERO ═══ -->
+<!-- TODO: Replace photo hero with Cloudflare Stream video when provided -->
+<div class="rp-hero rp-hero--photo" style="background-image: url({{'/images/thousand palms resort.png' | relative_url}})">
+  <div class="rp-hero__overlay"></div>
+  <div class="rp-hero__content">
+    <img src="{{'/images/logo.png' | relative_url}}" alt="Red Rover" class="rp-hero__logo">
+    <h1 class="rp-hero__title">Thousand Palms Resort</h1>
+    <p class="rp-hero__location"><i class="ion ion-ios-pin"></i> Sevierville, TN</p>
+    <!-- TODO: Update badge (Open Year-Round / Open Seasonally: Month – Month) -->
+    <span class="rp-hero__badge">Open Year-Round</span>
+  </div>
+</div>
+
+<!-- ═══ BOOKING BAR ═══ -->
+<div class="rp-booking-bar">
+  <div class="rp-booking-bar__inner container">
+    <span class="rp-booking-bar__label">Reserve Your Stay</span>
+    <form class="rp-booking-bar__form" action="/book-now/" method="GET">
+      <div class="rp-booking-bar__field">
+        <label>Check-In</label>
+        <input type="date" name="checkin" required>
+      </div>
+      <div class="rp-booking-bar__divider"></div>
+      <div class="rp-booking-bar__field">
+        <label>Check-Out</label>
+        <input type="date" name="checkout" required>
+      </div>
+      <div class="rp-booking-bar__divider"></div>
+      <div class="rp-booking-bar__field">
+        <label>Guests</label>
+        <select name="guests">
+          <option value="1">1 Guest</option>
+          <option value="2" selected>2 Guests</option>
+          <option value="3">3 Guests</option>
+          <option value="4">4 Guests</option>
+          <option value="5">5+ Guests</option>
+        </select>
+      </div>
+      <button class="rp-booking-bar__btn" type="submit">Book Now</button>
+    </form>
+  </div>
+</div>
+
+<!-- ═══ OVERVIEW ═══ -->
+<!-- TODO: Update tagline, address, and body text when content is provided -->
+<section class="rp-section">
+  <div class="container">
+    <div class="rp-overview">
+      <div class="rp-overview__text">
+        <p class="rp-section__eyebrow">About the Resort</p>
+        <h2 class="rp-section__title">Your Smoky Mountain Getaway</h2>
+        <p class="rp-overview__address"><i class="ion ion-ios-pin"></i> Sevierville, Tennessee</p>
+        <p class="rp-overview__body"><!-- TODO: Add resort overview text --></p>
+      </div>
+      <div class="rp-overview__image">
+        <img src="{{'/images/thousand palms resort.png' | relative_url}}" alt="Thousand Palms Resort">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ AMENITIES ═══ -->
+<!-- TODO: Replace placeholder cards with real amenity images and descriptions when provided -->
+<section class="rp-section rp-section--alt">
+  <div class="container">
+    <p class="rp-section__eyebrow">What's Included</p>
+    <h2 class="rp-section__title">Resort Amenities</h2>
+    <p class="rp-section__subtitle"><!-- TODO: Add amenities subtitle --></p>
+    <div class="rp-amenities rp-amenities--img">
+      <!-- TODO: Add amenity cards with images in this format:
+      <div class="rp-amenity-img">
+        <img src="IMAGE_URL" alt="Amenity Name">
+        <div class="rp-amenity-img__body"><strong>Amenity Name</strong><p>Description.</p></div>
+      </div>
+      -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CHECK-IN / CHECK-OUT ═══ -->
+<!-- TODO: Confirm check-in/out times when content is provided -->
+<section class="rp-section">
+  <div class="container">
+    <p class="rp-section__eyebrow">Planning Your Visit</p>
+    <h2 class="rp-section__title">Check-In &amp; Check-Out Times</h2>
+    <div class="rp-hours">
+      <div class="rp-hours__card">
+        <div class="rp-hours__icon">🏕️</div>
+        <h4>RV Sites</h4>
+        <div class="rp-hours__row"><span>Check-In</span><strong>1:00 PM</strong></div>
+        <div class="rp-hours__row"><span>Check-Out</span><strong>11:00 AM</strong></div>
+      </div>
+      <div class="rp-hours__card">
+        <div class="rp-hours__icon">⛺</div>
+        <h4>Campsites</h4>
+        <div class="rp-hours__row"><span>Check-In</span><strong>1:00 PM</strong></div>
+        <div class="rp-hours__row"><span>Check-Out</span><strong>11:00 AM</strong></div>
+      </div>
+      <div class="rp-hours__card">
+        <div class="rp-hours__icon">🏠</div>
+        <h4>Cabins</h4>
+        <div class="rp-hours__row"><span>Check-In</span><strong>3:00 PM</strong></div>
+        <div class="rp-hours__row"><span>Check-Out</span><strong>11:00 AM</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ LOCATION ═══ -->
+<!-- TODO: Add correct Google Maps embed URL and resort map image when provided -->
+<section class="rp-section rp-section--alt">
+  <div class="container">
+    <p class="rp-section__eyebrow">Find Us</p>
+    <h2 class="rp-section__title">Location &amp; Map</h2>
+    <p class="rp-section__subtitle"><!-- TODO: Add location description --></p>
+    <div class="rp-location">
+      <div class="rp-location__col">
+        <h4>Directions</h4>
+        <div class="rp-location__embed">
+          <!-- TODO: Replace with correct Google Maps embed URL -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100000!2d-83.5!3d35.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sThousand%20Palms%20Resort%2C%20Sevierville%2C%20TN!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="rp-location__col">
+        <h4>Resort Map</h4>
+        <!-- TODO: Replace with actual resort map image URL -->
+        <div class="rp-location__resort-map rp-location__resort-map--placeholder">
+          <p>Resort map coming soon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ NEARBY ATTRACTIONS ═══ -->
+<!-- TODO: Add nearby attraction cards with images when content is provided -->
+<section class="rp-section">
+  <div class="container">
+    <p class="rp-section__eyebrow">Explore the Area</p>
+    <h2 class="rp-section__title">Nearby Attractions</h2>
+    <p class="rp-section__subtitle"><!-- TODO: Add nearby attractions subtitle --></p>
+    <div class="rp-nearby">
+      <!-- TODO: Add nearby attraction cards in this format:
+      <div class="rp-nearby__card">
+        <div class="rp-nearby__img" style="background-image: url('IMAGE_URL')"></div>
+        <div class="rp-nearby__body"><h4>Attraction Name</h4><p>Description.</p></div>
+      </div>
+      -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══ REVIEWS ═══ -->
+<!-- TODO: Add real guest reviews, rating, and review count when provided -->
+<section class="rp-section rp-section--dark">
+  <div class="container">
+    <p class="rp-section__eyebrow rp-section__eyebrow--light">Guest Experiences</p>
+    <h2 class="rp-section__title rp-section__title--light">What Our Guests Are Saying</h2>
+    <div class="rp-rating">
+      <!-- TODO: Update stars, score, and count -->
+      <span class="rp-rating__stars">★★★★☆</span>
+      <span class="rp-rating__meta"><strong>4.0</strong> out of 5 &nbsp;·&nbsp; Reviews coming soon</span>
+    </div>
+    <div class="rp-reviews">
+      <!-- TODO: Add review cards in this format:
+      <div class="rp-review"><div class="rp-review__stars">★★★★★</div><p>"Review text."</p><span class="rp-review__author">— Name</span></div>
+      -->
+    </div>
+  </div>
+</section>
