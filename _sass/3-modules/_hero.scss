@@ -1,3 +1,34 @@
+/* Resort Video Hero */
+.resort-page__video-hero {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  background: #000;
+
+  @media only screen and (max-width: $tablet) { height: 380px; }
+  @media only screen and (max-width: $mobile) { height: 280px; }
+}
+
+.resort-page__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  pointer-events: none;
+}
+
+.resort-page__logo {
+  height: 48px;
+  width: auto;
+  margin-bottom: 1rem;
+  display: block;
+  filter: brightness(0) invert(1);
+
+  @media only screen and (max-width: $mobile) { height: 36px; }
+}
+
 /* Hero Banner */
 .hero-banner {
   margin-bottom: 3rem;

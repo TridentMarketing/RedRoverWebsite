@@ -1,0 +1,29 @@
+<section class="booking-section">
+  <div class="container">
+    <h2 class="booking-section__title">Book Your Stay</h2>
+    <p class="booking-section__subtitle">Reserve your spot at {{ page.title }} today.</p>
+    <form class="booking-form" action="/book-now/" method="GET">
+      <div class="booking-form__fields">
+        <div class="booking-form__field">
+          <label class="booking-form__label">Check-In</label>
+          <input class="booking-form__input" type="date" name="checkin" required>
+        </div>
+        <div class="booking-form__field">
+          <label class="booking-form__label">Check-Out</label>
+          <input class="booking-form__input" type="date" name="checkout" required>
+        </div>
+        <div class="booking-form__field">
+          <label class="booking-form__label">Guests</label>
+          <select class="booking-form__input" name="guests">
+            <option value="1">1 Guest</option>
+            <option value="2" selected>2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5+ Guests</option>
+          </select>
+        </div>
+        <button class="booking-form__button" type="submit">Book Now</button>
+      </div>
+    </form>
+  </div>
+</section>
